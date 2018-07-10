@@ -12,15 +12,21 @@
     <div id="loginContainer">
       <div id="loggedIn">
         <p id="userName"></p>
-        <input id="logOutButton" type="button" value="LOG OUT">
+        <input id="logOutButton" onclick="logout()" type="button" value="LOG OUT">
       </div>
       <div id="loggedOut">
         <input id="email" type="email">
         <input id="password" type="password">
         <input id="register" onclick="register()" type="button" value="REGISTER">
         <input id="login" onclick="login()" type="button" value="LOGIN">
+        <input id="loginFacebook" type="button" onclick="loginFacebook()" value="FACEBOOK">
       </div>
     </div >
+    <div>
+      <div id="messageContainer"></div>
+      <input id="messageArea" type="text">
+      <input id="sendButton" type="button" value="SEND" onclick="sendMessage()">
+    </div>
     
   
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
